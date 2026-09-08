@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signal Flow — AI hi-fi signal chain designer</title>
+    <meta
+      name="description"
+      content="Signal Flow is a cloud, AI-powered web app for designing and analyzing the signal chain of your hi-fi audio system."
+    />
+    <style>
+      :root {
+        --bg: #0b0e14;
+        --panel: #141925;
+        --accent: #1e88e5;
+        --accent-2: #4fc3f7;
+        --text: #e6edf3;
+        --muted: #8b98ac;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 820px; margin: 0 auto; padding: 96px 24px; }
+      h1 { font-size: 48px; margin: 0 0 12px; letter-spacing: -0.02em; }
+      .tag { color: var(--accent-2); font-weight: 600; }
+      .lede { font-size: 20px; color: var(--muted); line-height: 1.5; margin: 0 0 40px; }
+      .chain { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 40px 0; }
+      .node { background: var(--panel); border: 1px solid #1c2333; border-radius: 10px; padding: 12px 16px; }
+      .arrow { opacity: 0.4; font-size: 20px; }
+      .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 48px; }
+      .card { background: var(--panel); border: 1px solid #1c2333; border-radius: 12px; padding: 20px; }
+      .card h3 { margin: 0 0 8px; font-size: 17px; }
+      .card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+      footer { margin-top: 72px; color: var(--muted); font-size: 13px; }
+      a { color: var(--accent-2); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Signal <span class="tag">Flow</span></h1>
+      <p class="lede">
+        A cloud, AI-powered designer for your hi-fi audio signal chain. Map your
+        system, and an AI consultant explains the flow, flags mismatches, and
+        recommends upgrades.
+      </p>
+
+      <div class="chain">
+        <span class="node">Source</span><span class="arrow">→</span>
+        <span class="node">DAC</span><span class="arrow">→</span>
+        <span class="node">Preamp</span><span class="arrow">→</span>
+        <span class="node">Power Amp</span><span class="arrow">→</span>
+        <span class="node">Speakers</span>
+      </div>
+
+      <div class="features">
+        <div class="card">
+          <h3>Visualize the chain</h3>
+          <p>See every stage from source to speakers at a glance.</p>
+        </div>
+        <div class="card">
+          <h3>AI analysis</h3>
+          <p>Claude spots the weak link, gain/impedance mismatches, and redundant conversions.</p>
+        </div>
+        <div class="card">
+          <h3>Upgrade advice</h3>
+          <p>Budget-aware, practical recommendations for what to improve next.</p>
+        </div>
+      </div>
+
+      <footer>
+        Signal Flow · powered by Claude. This is the public site — the app source is private.
+      </footer>
+    </div>
+  </body>
+</html>

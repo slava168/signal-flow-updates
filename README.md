@@ -1,5 +1,12 @@
-# Signal Flow — Updates
+# Signal Flow — Public Site
 
-Public distribution channel and update manifest for the Signal Flow app.
+Public landing / marketing site for **Signal Flow**, the cloud, AI-powered hi-fi audio
+signal chain designer.
 
-Source code lives in the private repo `slava168/signal-flow`.
+- **App source (private):** `slava168/signal-flow`
+- This repo: the public product page (`index.html`).
+
+## Publishing
+
+Enable **GitHub Pages** (Settings → Pages → Deploy from branch → `main` / root) to serve
+`index.html` at `https://slava168.github.io/signal-flow-updates/`.
