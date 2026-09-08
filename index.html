@@ -38,15 +38,17 @@
       .card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
       footer { margin-top: 72px; color: var(--muted); font-size: 13px; }
       a { color: var(--accent-2); }
+      .ver { display: inline-block; margin-left: 12px; padding: 4px 10px; border: 1px solid #1c2333; border-radius: 999px; font-size: 13px; color: var(--muted); vertical-align: middle; }
     </style>
   </head>
   <body>
     <div class="wrap">
-      <h1>Signal <span class="tag">Flow</span></h1>
+      <h1>Signal <span class="tag">Flow</span><span class="ver">v0.4.0</span></h1>
       <p class="lede">
-        A cloud, AI-powered designer for your hi-fi audio signal chain. Map your
-        system, and an AI consultant explains the flow, flags mismatches, and
-        recommends upgrades.
+        A cloud, AI-powered designer for your hi-fi audio signal chain. Build a
+        visual scheme — drag the boxes, wire typed cables, add product photos —
+        and an AI consultant explains the flow, flags mismatches, and recommends
+        upgrades.
       </p>
 
       <div class="chain">
@@ -59,16 +61,28 @@
 
       <div class="features">
         <div class="card">
-          <h3>Visualize the chain</h3>
-          <p>See every stage from source to speakers at a glance.</p>
+          <h3>Visual scheme</h3>
+          <p>Freely drag stage boxes on a zoomable canvas — arrange your system exactly the way it's wired.</p>
+        </div>
+        <div class="card">
+          <h3>Typed cables</h3>
+          <p>Draw connections and label each as interconnect, speaker, network, power, USB or optical. One box can feed many.</p>
+        </div>
+        <div class="card">
+          <h3>15 stage types</h3>
+          <p>Sources, DACs, pre/power amps, speakers, plus network gear (modem, router, switch) and power (conditioners, strips, PSUs, outlets).</p>
+        </div>
+        <div class="card">
+          <h3>Per-stage details</h3>
+          <p>Tag each device's roles and I/O — streamer, Ethernet in, USB source, linear PSU — and add a product photo.</p>
         </div>
         <div class="card">
           <h3>AI analysis</h3>
-          <p>Claude spots the weak link, gain/impedance mismatches, and redundant conversions.</p>
+          <p>An AI consultant spots the weak link, gain/impedance mismatches, and redundant conversions.</p>
         </div>
         <div class="card">
-          <h3>Upgrade advice</h3>
-          <p>Budget-aware, practical recommendations for what to improve next.</p>
+          <h3>Compare systems</h3>
+          <p>Build several signal flows side by side and analyze any selection to see which is strongest and why.</p>
         </div>
       </div>
     </div>
