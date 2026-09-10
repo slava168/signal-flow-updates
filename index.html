@@ -3,149 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ai Signal Flow — AI hi-fi signal chain designer</title>
-    <meta
-      name="description"
-      content="Ai Signal Flow is a cloud, AI-powered web app for designing and analyzing the signal chain of your hi-fi audio system."
-    />
+    <title>Ai Signal Flow</title>
+    <meta http-equiv="refresh" content="0; url=https://aisignalflow.vercel.app/about" />
+    <link rel="canonical" href="https://aisignalflow.vercel.app/about" />
     <style>
-      :root {
-        --bg: #0b0e14;
-        --panel: #141925;
-        --accent: #1e88e5;
-        --accent-2: #4fc3f7;
-        --text: #e6edf3;
-        --muted: #8b98ac;
-      }
-      * { box-sizing: border-box; }
-      html, body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
+      html, body { margin: 0; height: 100%; background: #0b0e14; color: #e6edf3;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
-      .wrap { max-width: 820px; margin: 0 auto; padding: 96px 24px; }
-      h1 { font-size: 48px; margin: 0 0 12px; letter-spacing: -0.02em; }
-      .tag { color: var(--accent-2); font-weight: 600; }
-      .lede { font-size: 20px; color: var(--muted); line-height: 1.5; margin: 0 0 40px; }
-      .chain { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 40px 0; }
-      .node { background: var(--panel); border: 1px solid #1c2333; border-radius: 10px; padding: 12px 16px; }
-      .arrow { opacity: 0.4; font-size: 20px; }
-      .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 48px; }
-      .card { background: var(--panel); border: 1px solid #1c2333; border-radius: 12px; padding: 20px; }
-      .card h3 { margin: 0 0 8px; font-size: 17px; }
-      .card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
-      footer { margin-top: 72px; color: var(--muted); font-size: 13px; }
-      a { color: var(--accent-2); }
-      .ver { display: inline-block; margin-left: 12px; padding: 4px 10px; border: 1px solid #1c2333; border-radius: 999px; font-size: 13px; color: var(--muted); vertical-align: middle; }
+        display: flex; align-items: center; justify-content: center; }
+      a { color: #4fc3f7; }
     </style>
   </head>
   <body>
-    <div class="wrap">
-      <h1><span class="tag">Ai</span> Signal <span class="tag">Flow</span><span class="ver">v0.51.0</span></h1>
-      <p class="lede">
-        A cloud, AI-powered designer for your hi-fi audio signal chain. Snap a
-        photo of your rack and let AI build the chain for you — or draw it by
-        hand: drag the boxes, wire typed cables, add product photos. Then share
-        it as a clean image, and let an AI consultant explain the flow, flag
-        mismatches, and recommend upgrades. Your work is saved automatically.
-      </p>
-
-      <div class="chain">
-        <span class="node">Source</span><span class="arrow">→</span>
-        <span class="node">DAC</span><span class="arrow">→</span>
-        <span class="node">Preamp</span><span class="arrow">→</span>
-        <span class="node">Power Amp</span><span class="arrow">→</span>
-        <span class="node">Speakers</span>
-      </div>
-
-      <div class="features">
-        <div class="card">
-          <h3>✨ Build with AI</h3>
-          <p>Paste a forum post, a component list or notes — <em>and</em> drop in as many photos as you like. Paste-and-forget: Google Gemini reads text and images together for sharp device recognition, skips duplicate and irrelevant shots, merges repeat views of one device, and drops a single chain into a new flow or one you choose.</p>
-        </div>
-        <div class="card">
-          <h3>⛔ Live validation</h3>
-          <p>Wire something that can't work — passive speakers with no amp, a turntable into a line input with no phono stage, the wrong cable on a link — and the connection lights up red on the canvas, with a plain-English reason. Structural checks only: it flags how things are wired, never guesses a product's specs.</p>
-        </div>
-        <div class="card">
-          <h3>💡 Per-stage tips</h3>
-          <p>Every box carries a one-line, always-true setup tip for its kind — match power to your speakers, set cartridge tracking force, keep the digital link short. Concrete guidance, no fabricated numbers.</p>
-        </div>
-        <div class="card">
-          <h3>Starter templates</h3>
-          <p>Don't know where to begin? One tap drops a correctly-wired starter chain — streaming, vinyl, separates or a desktop headphone rig — that you then edit to match your system.</p>
-        </div>
-        <div class="card">
-          <h3>Visual scheme</h3>
-          <p>Freely drag stage boxes on a zoomable canvas — arrange your system exactly the way it's wired. Zoom in past fit and the canvas scrolls to reach every corner of a big layout.</p>
-        </div>
-        <div class="card">
-          <h3>Typed connections</h3>
-          <p>Label each link — not just cables: analog interconnect, analog coaxial or speaker cable; digital USB, optical, coaxial (S/PDIF), AES/EBU, HDMI or I²S; wired network or wireless Wi-Fi; AC or DC power; a ground/earth wire; and mechanical links too — a drive belt from a motor to the platter, or the air line from a pump to a vacuum/air-bearing turntable. One box can feed many.</p>
-        </div>
-        <div class="card">
-          <h3>51 stage types</h3>
-          <p>Sources (streamer, computer, tuner, CD/transport, TV, monitor/display, tape, NAS), a full vinyl front-end (turntable, tonearm, arm board, headshell, cartridge, motor, record clamp, record weight, air pump, step-up transformer, phono stage), DACs, room-correction/DSP, AV processors, pre/power/integrated amps, receivers, headphone amps, speakers, studio monitors, a center-channel speaker, subwoofers and headphones, network gear, power (electrical panel, step-down transformer, conditioners, strips, PSUs incl. a dedicated linear supply and a switch-mode/wall-wart brick, outlets) and support/isolation (platforms, feet, bases, stands).</p>
-        </div>
-        <div class="card">
-          <h3>Per-stage details</h3>
-          <p>Tag each device's roles and I/O — streamer, Ethernet in, USB source, linear PSU — and add a product photo.</p>
-        </div>
-        <div class="card">
-          <h3>AI analysis</h3>
-          <p>An AI Consult box sits right beside Build with AI: pick which flow to analyse, ask your question, and a senior-consultant AI (Google Gemini) writes a professional report under that canvas — the verdict, the single weak link with the engineering reason, gain/impedance mismatches and redundant conversions, then prioritised, budget-aware upgrades. Then keep the conversation going — ask follow-up questions right under the answer and the consultant remembers the whole thread. The report grows the flow window downward as it streams — your stage canvas keeps its size. Accurate by design, never inventing specs or prices.</p>
-        </div>
-        <div class="card">
-          <h3>One giant canvas</h3>
-          <p>Every flow is a window on a single, spacious workspace — drag it anywhere by its handle, resize it from the corner, or fold it to its title bar to give another flow the room. Its stage canvas and AI consultant resize and move as one unit, and the workspace grows its height automatically so a flow dragged past the edge is never hidden.</p>
-        </div>
-        <div class="card">
-          <h3>Snap, fill &amp; arrange</h3>
-          <p>macOS-style window controls: snap a flow to the left, right, top or bottom half, fill the whole canvas, or auto-tile every flow into an even grid — one click, no dragging.</p>
-        </div>
-        <div class="card">
-          <h3>Scale to fit</h3>
-          <p>Resize a flow window and the scheme fills the width at the largest readable size — no wasted side space. A tall chain scrolls; a wide one fills edge to edge. Prefer a fixed zoom? Drag the slider; hit Fit to snap back to auto. Drag a stage box's corner to resize it too.</p>
-        </div>
-        <div class="card">
-          <h3>Compact, high-density UI</h3>
-          <p>Slim, crisp chrome — like a Mac's &ldquo;More Space&rdquo; display mode — keeps the controls out of the way and gives your signal chains far more room. Controls are grouped by what they do, so nothing feels overwhelming.</p>
-        </div>
-        <div class="card">
-          <h3>Liquid Glass</h3>
-          <p>Frosted, translucent panels in the spirit of macOS &ldquo;Liquid Glass&rdquo; — the workspace shows through, softly blurred, with thin light edges. Easy on the eyes, same dark palette.</p>
-        </div>
-        <div class="card">
-          <h3>Reroute cables</h3>
-          <p>Grab a cable and bend it anywhere — it stays pinned to both stages. Double-click to snap it back.</p>
-        </div>
-        <div class="card">
-          <h3>Flow view</h3>
-          <p>A minimalist block-diagram schematic of your chain — plain boxes joined by thin arrowed connectors with cables named on each line, laid out just as you arranged them, endpoints lightly shaded like a classic signal-flow chart. Zoom it in and out to read every label. Copy it as clean text to paste straight into WhatsApp, a hi-fi forum, X, or email.</p>
-        </div>
-        <div class="card">
-          <h3>Screenshot the canvas</h3>
-          <p>One click saves a crisp PNG of your canvas exactly as arranged — real boxes, wired cables and product photos, at full resolution.</p>
-        </div>
-        <div class="card">
-          <h3>Undo &amp; redo</h3>
-          <p>Made a change you didn't mean? Press ⌘Z (or Ctrl+Z) to step back, ⇧⌘Z (or Ctrl+Y) to step forward — across every box, cable, photo and window move. Undo/Redo buttons sit in the canvas toolbar too.</p>
-        </div>
-        <div class="card">
-          <h3>Auto-save</h3>
-          <p>Every box, cable and photo is saved on your device as you go — a refresh or an accidental reset won't lose your work. Large systems with lots of product photos are stored in your browser's high-capacity local database, so even a big rig saves intact.</p>
-        </div>
-        <div class="card">
-          <h3>Save &amp; open files</h3>
-          <p>Export any flow to a portable file and open it on another computer — boxes, typed cables, features and photos travel with it. Share a design or move your work between machines.</p>
-        </div>
-      </div>
-
-      <footer>
-        Developer: <strong>Juiced</strong> · Powered by Google Gemini
-      </footer>
-    </div>
+    <p>
+      Ai Signal Flow has moved —
+      <a href="https://aisignalflow.vercel.app/about">open it here</a>.
+    </p>
   </body>
 </html>
